@@ -1,18 +1,27 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class='d-flex justify-content-center align-items-center bg-img'>
+    <SearchForm />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import SearchForm from '../components/SearchForm.vue'
 
 export default {
-  name: "home",
+  name: 'Home',
   components: {
-    HelloWorld
+    SearchForm
   }
-};
+}
 </script>
+
+<style scoped>
+.bg-img {
+  background-image: url('../assets/main-bg-photo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+</style>
