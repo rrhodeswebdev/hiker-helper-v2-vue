@@ -7,13 +7,15 @@
     </div>
     <div>
       <b-form class='d-flex flex-column justify-content-center'>
-        <b-form-input type='text' placeholder='Enter location' v-model='searchQuery'>
+        <b-form-input ref='search' type='text' placeholder='Enter location' v-model='searchQuery'>
         </b-form-input>
         <b-button
           class='mt-3'
           type='submit'
           variant='primary'
-          @click.prevent='searchSubmit'>
+          @click.prevent='searchSubmit'
+          v-if='searchQuery.length > 0'
+        >
             Search
         </b-button>
       </b-form>
@@ -36,6 +38,9 @@ export default {
         params: { query: this.searchQuery }
       })
     }
+  },
+  mounted() {
+    this.$refs.search.focus()
   }
 }
 </script>
