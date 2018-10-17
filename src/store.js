@@ -2,9 +2,11 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
 
-import { API_KEY, WEATHER_KEY, TRAIL_KEY } from './keys'
-
 Vue.use(Vuex)
+
+const API_KEY = 'AIzaSyCnyL8uMZZ2--PxXexaApNEb0oMTN2vbyM'
+const WEATHER_KEY = '561f14cf5f16425a98fb0f2ce6cfe344'
+const TRAIL_KEY = '200202949-be5202662091a9dc38356c0c802cd058'
 
 export default new Vuex.Store({
   state: {
