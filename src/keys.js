@@ -1,5 +1,0 @@
-export default {
-  API_KEY: 'AIzaSyCnyL8uMZZ2--PxXexaApNEb0oMTN2vbyM',
-  WEATHER_KEY: '561f14cf5f16425a98fb0f2ce6cfe344',
-  TRAIL_KEY: '200202949-be5202662091a9dc38356c0c802cd058'
-}
